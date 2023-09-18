@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--===========style,css==========-->
+<link rel="stylesheet" href="style.css">
+    <title>system management</title>
+</head>
+<body>
+    
+<div class="cruds">
+    <div class="head">
+        <h2>cruds</h2>
+        <h4>products manangement system</h4>
+    </div>
+    <div class="inputs">
+        <input type="text" id="title" placeholder="enter your title here...">
+     <div class="total">
+       <input  onkeyup="caltotal()" type="number" id="price" placeholder="price">
+       <input  onkeyup="caltotal()" type="number" id="tax" placeholder="tax">
+       <input  onkeyup="caltotal()" type="number" id="ads" placeholder="ads">
+       <input  onkeyup="caltotal()" type="number" id="discount" placeholder="discount">
+       <small id="total">0</small>
+     </div>
+     <input type="number" id="count" placeholder="enter count here...">
+     <input type="text" id="category" placeholder="enter categoryhere...">
+     <button id="build">creat</button>
+    </div>
+<div class="outputs">
+ <div class="search">
+    <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search here...">
+    <div class="search-btn">
+        <button onclick="searchinp(this.id)" id="bytitle">search by title</button>
+        <button onclick="searchinp(this.id)" id="bycategory">search by category</button>
+    </div>
+ </div>
+ <div id="deleteall"></div>
+ <table>
+     <tbody>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxs</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+     </tbody>
+     <tbody id="tbody">
+        <tr>
+            <td>0</td>
+            <td>oppo</td>
+            <td>2000</td>
+            <td>200</td>
+            <td>200</td>
+            <td>300</td>
+            <td>3000</td>
+            <td>phonr</td>
+            <td><button> update</button></td>
+            <td><button>delete</button></td>
+        </tr>
+     </tbody>
+  
+ </table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--================main.js============-->
+    <script src="main.js"></script>
+</body>
+</html>
